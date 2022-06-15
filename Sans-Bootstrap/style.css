@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&display=swap');
+
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
-  
+
 }
+
 main {
   margin-top: 80px;
 }
 
 header a {
   color: #F1DB86;
-  
+
 }
 
 section#row1 {
@@ -23,9 +25,12 @@ main a {
   color: #000;
 }
 
-footer{
+footer {
   background-color: #000;
   display: flex;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 
 footer ul {
@@ -33,12 +38,13 @@ footer ul {
   list-style: none;
   justify-content: space-evenly;
   width: 100%;
-  
+
 }
 
 footer a {
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
+
 }
 
 img {
@@ -50,15 +56,14 @@ img {
   left: 5%;
 }
 
-style img{
-  width: 33%;
-}
 
-.style, img, section#row1 {
+.style,
+img,
+section#row1 {
   border-radius: 20px;
 }
 
-.style{
+.style {
   margin: 0 10px 50px 10px;
   background-color: #E4E6FF;
 }
@@ -71,8 +76,8 @@ style img{
 /* header */
 
 header {
-  background: linear-gradient(135deg, rgb(107,0,62)0%,rgb(250,46,46)100%);
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  background: linear-gradient(135deg, rgb(107, 0, 62)0%, rgb(250, 46, 46)100%);
+  box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, .1);
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -159,36 +164,36 @@ header .menu-btn {
   display: none;
 }
 
-header .menu-btn:checked ~ .menu {
+header .menu-btn:checked~.menu {
   max-height: 240px;
 }
 
-header .menu-btn:checked ~ .menu-icon .navicon {
+header .menu-btn:checked~.menu-icon .navicon {
   background: transparent;
 }
 
-header .menu-btn:checked ~ .menu-icon .navicon:before {
+header .menu-btn:checked~.menu-icon .navicon:before {
   transform: rotate(-45deg);
 }
 
-header .menu-btn:checked ~ .menu-icon .navicon:after {
+header .menu-btn:checked~.menu-icon .navicon:after {
   transform: rotate(45deg);
 }
 
-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+header .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+header .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
 
 button {
   padding: 10px 20px 10px 20px;
-  border-radius:20px;
-  background: linear-gradient(135deg, rgb(107,0,62)0%,rgb(250,46,46)100%);
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgb(107, 0, 62)0%, rgb(250, 46, 46)100%);
   color: #E4E6FF;
   border-color: #E4E6FF;
 }
 
-button:hover{
+button:hover {
   cursor: pointer;
   border-color: #5f0620;
   background: white;
@@ -202,36 +207,38 @@ button:hover{
   header li {
     float: left;
   }
+
   header li a {
     padding: 20px 30px;
   }
+
   header .menu {
     clear: none;
     float: right;
     max-height: none;
   }
+
   header .menu-icon {
     display: none;
   }
+
   main {
     width: 80vw;
     position: absolute;
     left: 10vw;
     right: 10vw;
   }
+
   .style {
     border-radius: 25px;
     height: auto;
     width: 100%;
   }
-  
-  section{
+
+  section#row2 {
     display: flex;
-    width: 100%;
-    justify-content: space-evenly;
   }
 
 
 
 }
-
