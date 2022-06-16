@@ -11,75 +11,86 @@
 
 <body>
     <main>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary bg-gradient">
             <div class="container-fluid">
-                <a href="Accueil.html" class="navbar-brand">Tm Tuto</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <a href="Accueil.html" class="navbar-brand border-secondary border border-3  text-secondary p-3 h1" style="font-size:2rem;">Tm
+                    Tuto</a>
+                <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="#" class="nav-link">Titre de nav</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Titre de nav</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Titre de nav</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Titre de nav</a></li>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent" style="position: relative;right:1em;">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item h3 m-3"><a href="tech.html" class="nav-link">Tech</a></li>
+                    <li class="nav-item h3 m-3"><a href="dirt.html" class="nav-link">Dirt</a></li>
+                    <li class="nav-item h3 m-3"><a href="fullspeed.html" class="nav-link">Fullspeed</a></li>
+                    <li class="nav-item h3 m-3"><a href="https://discord.gg/qB3bQJyA" class="nav-link">Discord</a></li>
                 </ul>
-                <button class="btn btn-primary" type="succes">Download</button>
+                <a class="btn btn-outline-secondary " href="trackmania.com" role="button" style="font-size: 1.25rem;">Download</a>
             </div>
         </nav>
 
-        
-        <div class="container p-0">
-            <div class="row">
-                <h1>Formulaire de Contact :</h1>
-                <div class="form-floating col-6 sm-col-4 ">
-                    <input type="text" class="form-control" id="floatingName">
-                    <label for="floatingName">Nom</label>
+
+        <form class="container mt-3 p-0 xs-p-3" action="https://httpbin.org,">
+            <div class="card">
+                <h3 class="card-title w-75 mt-3" style="position:relative;left:1em;">Formulaire de contact</h3>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="form-floating mb-3 col-8 ">
+                            <input type="text" class="form-control" id="floatingName">
+                            <label for="floatingName">Nom</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-floating mb-3 col-8">
+                            <input type="text" class="form-control" id="floatingFirstName">
+                            <label for="floatingFirstName">Prénom</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-floating mb-3 col-8">
+                            <input type="email" class="form-control" id="floatingEmail">
+                            <label for="floatingEmail">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-8">
+                            <select class="form-select mb-3" aria-label="Default select example">
+                                <option selected>Objet du formulaire</option>
+                                <option value="1">Quoi?</option>
+                                <option value="2">Feur !</option>
+                                <option value="3">Ahaha</option>
+                                <option value="3">Je t'ai bien eu UwU</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-floating mb-3 col-12">
+                        <textarea class="form-control" id="floatingComment" style="height:200px;"></textarea>
+                        <label for="floatingComment">Commentaire</label>
+                    </div>
+                    <div class="row">
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </div>
                 </div>
-                <div class="form-floating mb-3 col-6 sm-col-4">
-                    <input type="text" class="form-control" id="floatingFirstName">
-                    <label for="floatingFirstName">Prénom</label>
-                </div>
             </div>
-            <div class="row">
-                <div class="form-floating mb-3 col-10 sm-col-8 lg-col-6">
-                    <input type="email" class="form-control" id="floatingEmail">
-                    <label for="floatingEmail">Email</label>
-                </div>
-            </div>
-            <div class="row">
-                <select class="form-select mb-3" aria-label="Default select example">
-                    <option selected>Objet du formulaire</option>
-                    <option value="1">Quoi?</option>
-                    <option value="2">Feur !</option>
-                    <option value="3">Ahaha</option>
-                    <option value="3">Je t'ai bien eu UwU</option>
-                </select>
-            </div>
-            <div class="form-floating mb-3 col-10 sm-col-8 lg-col-6">
-                <textarea class="form-control" id="floatingComment" style="height:200px;"></textarea>
-                <label for="floatingComment">Commentaire</label>
-            </div>
-            <div class="row">
-                <button class="btn btn-primary">Envoyer</button>
-            </div>
-        </div>
+        </form>
 
 
         <footer>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Github</a>
+                    <a class="nav-link text-black navbar-brand" href="https://github.com/ChristopheBaillet"><img src="" alt="">Github  <img class="d-inline-block align-text-center" src="assets/github.png" alt=""></a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link text-black navbar-brand" href="https://discord.gg/qB3bQJyA">Discord  <img class="d-inline-block align-text-center" src="assets/discord24px.png" alt=""></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Discord</a>
+                    <a class="nav-link text-black" href="PrivacyPolitics.html">Privacy Politics</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Privacy Politics</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Contact</a>
+                    <a class="nav-link text-black" href="contact.html">Contact</a>
                 </li>
             </ul>
         </footer>
